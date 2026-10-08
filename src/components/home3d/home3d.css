@@ -1,0 +1,51 @@
+﻿/* Home's scroll runway; the viewport stays in normal document flow. */
+.architecture-story { height: 500svh; position: relative; }
+.architecture-sticky {
+  position: sticky; top: 92px; height: calc(100svh - 92px);
+  display: grid; grid-template-columns: 42% 58%; align-items: center;
+  padding: 3vh 5.5vw; overflow: hidden;
+}
+.home { text-align: left; }
+.home .hero-button { display: inline-block; text-decoration: none; }
+.home .hero-button:focus-visible { outline: 2px solid #4a1e2a; outline-offset: 5px; }
+.architecture-visual { min-width: 0; position: relative; height: 100%; display: flex; flex-direction: column; }
+.architecture-canvas { flex: 1; min-height: 0; }
+.architecture-caption {
+  display: flex; justify-content: space-between; gap: 1rem;
+  color: #7c6255; font-size: 0.58rem; letter-spacing: 0.12em; padding: 15px 0;
+}
+.architecture-track { display: flex; gap: 5px; padding-bottom: 18px; }
+.architecture-track span { height: 2px; flex: 1; background: #dfd4c8; transition: background 0.4s; }
+.architecture-track .is-active { background: #4a1e2a; }
+.architecture-scroll-note { margin-top: 28px; font-size: 0.65rem; color: #7c6255; letter-spacing: 0.08em; }
+.architecture-fallback { height: 100%; display: grid; align-content: center; gap: 16px; padding: 10%; color: #7c6255; }
+.architecture-fallback p { font: 2rem Georgia, serif; color: #4a1e2a; }
+.architecture-fallback span { font-size: 0.85rem; }
+.architecture-story.is-reduced { height: auto; }
+.architecture-story.is-reduced .architecture-sticky { position: relative; top: auto; }
+@media (max-width: 850px) {
+  .architecture-story { height: 420svh; }
+  .architecture-sticky { top: 78px; height: calc(100svh - 78px); grid-template-columns: 1fr; grid-template-rows: auto minmax(0, 1fr); padding: 20px 6vw 0; gap: 8px; }
+  .home .hero-content h1 { font-size: clamp(2.6rem, 9vw, 4rem); }
+  .home .hero-description { margin: 16px 0; font-size: 0.8rem; line-height: 1.5; max-width: 440px; }
+  .home .hero-eyebrow { margin-bottom: 12px; font-size: 0.55rem; }
+  .architecture-scroll-note { margin-top: 12px; font-size: 0.58rem; }
+  .architecture-caption { font-size: 0.5rem; letter-spacing: 0.05em; padding: 8px 0; }
+  .architecture-story.is-reduced .architecture-sticky { height: auto; min-height: calc(100svh - 78px); }
+  .architecture-story.is-reduced .architecture-visual { height: 350px; }
+}
+@media (max-height: 650px) and (min-width: 851px) {
+  .home .hero-content h1 { font-size: 3.5rem; }
+  .home .hero-description { margin: 16px 0; }
+}
+@media (max-height: 650px) and (max-width: 850px) {
+  .architecture-sticky { grid-template-columns: 45% 55%; grid-template-rows: 1fr; gap: 12px; }
+  .home .hero-content h1 { font-size: 2.2rem; }
+  .home .hero-description { font-size: 0.7rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .architecture-story { height: auto; }
+  .architecture-sticky { position: relative; top: auto; }
+  .home .hero-button, .architecture-track span { transition: none; }
+}
+

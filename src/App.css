@@ -1,0 +1,475 @@
+/* =========================
+   GLOBAL
+========================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f3ee;
+  color: #29231f;
+}
+
+
+/* =========================
+   PREMIUM NAVBAR
+========================= */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  height: 92px;
+  padding: 0 5.5vw;
+
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+
+  z-index: 1000;
+
+  background: rgba(247, 243, 238, 0.78);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  border-bottom: 1px solid rgba(74, 58, 48, 0.12);
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.navbar-logo {
+  justify-self: start;
+
+  text-decoration: none;
+  color: #4a1e2a;
+
+  font-size: 0.82rem;
+  font-weight: 600;
+
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+
+  white-space: nowrap;
+
+  transition: opacity 0.3s ease;
+}
+
+.navbar-logo:hover {
+  opacity: 0.55;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 34px;
+}
+
+.navbar-links a {
+  position: relative;
+
+  text-decoration: none;
+  color: #4b403a;
+
+  font-size: 0.68rem;
+  font-weight: 500;
+
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+
+  padding: 8px 0;
+
+  transition:
+    color 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #4a1e2a;
+}
+
+
+/* underline animation */
+
+.navbar-links a::after {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 0;
+  height: 1px;
+
+  background: #4a1e2a;
+
+  transition: width 0.35s ease;
+}
+
+.navbar-links a:hover::after {
+  width: 100%;
+}
+
+
+/* active page */
+
+.navbar-links a.active {
+  color: #4a1e2a;
+}
+
+.navbar-links a.active::after {
+  width: 100%;
+}
+
+
+/* =========================
+   MENU BUTTON
+========================= */
+
+.menu-button {
+  justify-self: end;
+
+  min-width: 92px;
+
+  padding: 11px 19px;
+
+  border: 1px solid rgba(74, 30, 42, 0.45);
+
+  background: transparent;
+  color: #4a1e2a;
+
+  font-size: 0.65rem;
+  font-weight: 600;
+
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.menu-button:hover {
+  background: #4a1e2a;
+  color: #fdf8f5;
+  border-color: #4a1e2a;
+}
+
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+main {
+  min-height: 100vh;
+  padding-top: 92px;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1100px) {
+
+  .navbar {
+    padding: 0 4vw;
+  }
+
+  .navbar-links {
+    gap: 22px;
+  }
+
+  .navbar-links a {
+    font-size: 0.62rem;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 850px) {
+
+  .navbar {
+    height: 78px;
+    padding: 0 5vw;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navbar-links {
+    display: none;
+  }
+
+  .navbar-logo {
+    font-size: 0.75rem;
+  }
+
+  .menu-button {
+    min-width: auto;
+    padding: 10px 16px;
+  }
+
+  main {
+    padding-top: 78px;
+  }
+}
+
+/* =========================
+   HOME HERO
+========================= */
+
+.home {
+  background: #f7f3ee;
+  color: #29231f;
+}
+
+.hero {
+  min-height: calc(100vh - 92px);
+
+  display: grid;
+  grid-template-columns: 42% 58%;
+
+  align-items: center;
+
+  padding: 70px 5.5vw 50px;
+
+  overflow: hidden;
+}
+
+
+/* =========================
+   HERO CONTENT
+========================= */
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+
+  max-width: 570px;
+}
+
+.hero-eyebrow {
+  margin: 0 0 25px;
+
+  color: #7c6255;
+
+  font-size: 0.68rem;
+  font-weight: 600;
+
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.hero-content h1 {
+  margin: 0;
+
+  color: #4a1e2a;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: clamp(4rem, 6.2vw, 7rem);
+
+  font-weight: 400;
+
+  line-height: 0.94;
+
+  letter-spacing: -0.045em;
+}
+
+.hero-content h1 span {
+  color: #8b6d5d;
+  font-style: italic;
+}
+
+.hero-description {
+  max-width: 440px;
+
+  margin: 32px 0;
+
+  color: #665b54;
+
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+.hero-button {
+  padding: 14px 25px;
+
+  border: 1px solid #4a1e2a;
+
+  background: #4a1e2a;
+  color: #fdf8f5;
+
+  font-size: 0.68rem;
+  font-weight: 600;
+
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.hero-button:hover {
+  background: transparent;
+  color: #4a1e2a;
+  transform: translateY(-2px);
+}
+
+
+/* =========================
+   3D SCENE
+========================= */
+
+.hero-scene {
+  height: 620px;
+
+  position: relative;
+
+  cursor: grab;
+}
+
+.hero-scene:active {
+  cursor: grabbing;
+}
+
+.hero-scene canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+
+/* =========================
+   INTRO SECTION
+========================= */
+
+.intro-section {
+  min-height: 80vh;
+
+  padding: 150px 12vw;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+.section-label {
+  margin: 0 0 28px;
+
+  color: #8b6d5d;
+
+  font-size: 0.68rem;
+  font-weight: 600;
+
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.intro-section h2 {
+  max-width: 850px;
+
+  margin: 0;
+
+  color: #4a1e2a;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: clamp(3rem, 5vw, 5.5rem);
+
+  font-weight: 400;
+
+  line-height: 1.02;
+
+  letter-spacing: -0.04em;
+}
+
+.intro-text {
+  max-width: 570px;
+
+  margin: 38px 0 0;
+
+  color: #665b54;
+
+  font-size: 1rem;
+  line-height: 1.9;
+}
+
+
+/* =========================
+   HOME MOBILE
+========================= */
+
+@media (max-width: 850px) {
+
+  .hero {
+    min-height: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 70px 6vw 30px;
+
+    align-items: stretch;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(3.5rem, 16vw, 5rem);
+  }
+
+  .hero-description {
+    max-width: 100%;
+  }
+
+  .hero-scene {
+    height: 420px;
+
+    margin-top: 20px;
+  }
+
+  .intro-section {
+    min-height: 70vh;
+    padding: 100px 8vw;
+  }
+
+  .intro-section h2 {
+    font-size: 3rem;
+  }
+}

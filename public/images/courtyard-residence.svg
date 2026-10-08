@@ -1,0 +1,29 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1100" viewBox="0 0 1600 1100" role="img" aria-label="Original concept illustration of a limestone residence with timber screening"><defs>
+<linearGradient id="sky" x2="0" y2="1"><stop stop-color="#e9e1d4"/><stop offset="1" stop-color="#f4ede3"/></linearGradient>
+<linearGradient id="stone" x2="1" y2=".8"><stop stop-color="#dfceb4"/><stop offset="1" stop-color="#bda283"/></linearGradient>
+<linearGradient id="shade" x2="1" y2="0"><stop stop-color="#56483c"/><stop offset="1" stop-color="#a08c72"/></linearGradient>
+<linearGradient id="glass" x2="1" y2="1"><stop stop-color="#7d9691"/><stop offset=".6" stop-color="#b4c1b2"/><stop offset="1" stop-color="#5c7069"/></linearGradient>
+<linearGradient id="ground" x2="0" y2="1"><stop stop-color="#d0bc9e"/><stop offset="1" stop-color="#e2d1b8"/></linearGradient>
+<filter id="soft"><feGaussianBlur stdDeviation="12"/></filter>
+<filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".65" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".055"/></feComponentTransfer><feBlend in="SourceGraphic" mode="multiply"/></filter>
+</defs><rect width="1600" height="1100" fill="url(#sky)"/><g filter="url(#grain)">
+<path d="M0 660L1600 570V1100H0Z" fill="url(#ground)"/>
+<ellipse cx="885" cy="840" rx="590" ry="110" fill="#806b52" opacity=".2" filter="url(#soft)"/>
+<path d="M250 420L1000 305L1370 510L600 640Z" fill="#e8dac4"/>
+<path d="M600 640L1370 510V820L600 940Z" fill="url(#stone)"/>
+<path d="M250 420L600 640V940L250 724Z" fill="#b09a7c"/>
+<path d="M625 640L1095 560V812L625 890Z" fill="url(#glass)"/>
+<path d="M660 632.05V878.05" stroke="#5e5142" stroke-width="8"/><path d="M800 608.25V854.25" stroke="#5e5142" stroke-width="8"/><path d="M940 584.45V830.45" stroke="#5e5142" stroke-width="8"/><path d="M1080 560.65V806.65" stroke="#5e5142" stroke-width="8"/>
+<path d="M625 768L1095 689" stroke="#617063" stroke-width="3" opacity=".8"/>
+<path d="M1110 562L1335 525V800L1110 836Z" fill="#866b4f"/>
+<path d="M1118 562V831" stroke="#c5ac84" stroke-width="5"/><path d="M1130 560V829" stroke="#c5ac84" stroke-width="5"/><path d="M1142 558V827" stroke="#c5ac84" stroke-width="5"/><path d="M1154 556V825" stroke="#c5ac84" stroke-width="5"/><path d="M1166 554V823" stroke="#c5ac84" stroke-width="5"/><path d="M1178 552V821" stroke="#c5ac84" stroke-width="5"/><path d="M1190 550V819" stroke="#c5ac84" stroke-width="5"/><path d="M1202 548V817" stroke="#c5ac84" stroke-width="5"/><path d="M1214 546V815" stroke="#c5ac84" stroke-width="5"/><path d="M1226 544V813" stroke="#c5ac84" stroke-width="5"/><path d="M1238 542V811" stroke="#c5ac84" stroke-width="5"/><path d="M1250 540V809" stroke="#c5ac84" stroke-width="5"/><path d="M1262 538V807" stroke="#c5ac84" stroke-width="5"/><path d="M1274 536V805" stroke="#c5ac84" stroke-width="5"/><path d="M1286 534V803" stroke="#c5ac84" stroke-width="5"/><path d="M1298 532V801" stroke="#c5ac84" stroke-width="5"/><path d="M1310 530V799" stroke="#c5ac84" stroke-width="5"/><path d="M1322 528V797" stroke="#c5ac84" stroke-width="5"/>
+<path d="M230 408L1000 286L1400 510L600 651Z" fill="#6d5744"/>
+<path d="M230 408V430L600 671L1400 529V510L600 651Z" fill="#4c4236"/>
+<path d="M350 804L600 964L1410 840L1530 925L600 1070L240 849Z" fill="#d9c6a6"/>
+<path d="M130 925V470" stroke="#655b42" stroke-width="17"/>
+<ellipse cx="130" cy="450" rx="150" ry="225" fill="#7c8469"/>
+<ellipse cx="95" cy="409" rx="115" ry="165" fill="#959c7d"/>
+<path d="M1450 851V512" stroke="#655b42" stroke-width="12"/>
+<ellipse cx="1450" cy="474" rx="114" ry="150" fill="#79836a"/>
+<path d="M690 825l125 -21v26l-125 21Z" fill="#ad8170" opacity=".8"/>
+</g></svg>

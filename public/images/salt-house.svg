@@ -1,0 +1,27 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1100" viewBox="0 0 1600 1100" role="img" aria-label="Original concept illustration of a terraced coastal hospitality courtyard"><defs>
+<linearGradient id="sky" x2="0" y2="1"><stop stop-color="#e9e1d4"/><stop offset="1" stop-color="#f4ede3"/></linearGradient>
+<linearGradient id="stone" x2="1" y2=".8"><stop stop-color="#dfceb4"/><stop offset="1" stop-color="#bda283"/></linearGradient>
+<linearGradient id="shade" x2="1" y2="0"><stop stop-color="#56483c"/><stop offset="1" stop-color="#a08c72"/></linearGradient>
+<linearGradient id="glass" x2="1" y2="1"><stop stop-color="#7d9691"/><stop offset=".6" stop-color="#b4c1b2"/><stop offset="1" stop-color="#5c7069"/></linearGradient>
+<linearGradient id="ground" x2="0" y2="1"><stop stop-color="#d0bc9e"/><stop offset="1" stop-color="#e2d1b8"/></linearGradient>
+<filter id="soft"><feGaussianBlur stdDeviation="12"/></filter>
+<filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".65" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".055"/></feComponentTransfer><feBlend in="SourceGraphic" mode="multiply"/></filter>
+</defs><rect width="1600" height="1100" fill="url(#sky)"/><g filter="url(#grain)">
+<circle cx="1260" cy="220" r="110" fill="#f4ead4" opacity=".8"/>
+<path d="M0 460Q350 300 700 430T1600 350V850H0Z" fill="#b6b7a2" opacity=".4"/>
+<path d="M0 730L1600 590V1100H0Z" fill="url(#ground)"/>
+<path d="M200 820L1200 695L1570 940L510 1050Z" fill="#947d64" opacity=".3" filter="url(#soft)"/>
+<path d="M200 340L1030 260L1430 480L650 610Z" fill="#efdfc7"/>
+<path d="M200 340L650 610V860L200 595Z" fill="#a38a6c"/>
+<path d="M650 610L1430 480V735L650 860Z" fill="url(#stone)"/>
+<path d="M230 385L635 625V820L230 580Z" fill="url(#shade)"/>
+<path d="M695 595l65 -11v180l-65 11Z" fill="url(#shade)"/><path d="M705 609l44 -7v151l-44 7Z" fill="#c4b396" opacity=".26"/><path d="M791 579l65 -11v180l-65 11Z" fill="url(#shade)"/><path d="M801 593l44 -7v151l-44 7Z" fill="#c4b396" opacity=".26"/><path d="M887 563l65 -11v180l-65 11Z" fill="url(#shade)"/><path d="M897 577l44 -7v151l-44 7Z" fill="#c4b396" opacity=".26"/><path d="M983 547l65 -11v180l-65 11Z" fill="url(#shade)"/><path d="M993 561l44 -7v151l-44 7Z" fill="#c4b396" opacity=".26"/><path d="M1079 531l65 -11v180l-65 11Z" fill="url(#shade)"/><path d="M1089 545l44 -7v151l-44 7Z" fill="#c4b396" opacity=".26"/><path d="M1175 515l65 -11v180l-65 11Z" fill="url(#shade)"/><path d="M1185 529l44 -7v151l-44 7Z" fill="#c4b396" opacity=".26"/><path d="M1271 499l65 -11v180l-65 11Z" fill="url(#shade)"/><path d="M1281 513l44 -7v151l-44 7Z" fill="#c4b396" opacity=".26"/><path d="M1367 483l65 -11v180l-65 11Z" fill="url(#shade)"/><path d="M1377 497l44 -7v151l-44 7Z" fill="#c4b396" opacity=".26"/>
+<path d="M580 855L1130 768L1360 900L800 1000Z" fill="#e8d8bd"/>
+<path d="M680 866L1120 798L1270 885L823 958Z" fill="url(#glass)"/>
+<path d="M715 850l310 -50" stroke="#cad3bf" opacity=".35" stroke-width="2"/><path d="M780 856l310 -50" stroke="#cad3bf" opacity=".35" stroke-width="2"/><path d="M845 862l310 -50" stroke="#cad3bf" opacity=".35" stroke-width="2"/><path d="M910 868l310 -50" stroke="#cad3bf" opacity=".35" stroke-width="2"/><path d="M975 874l310 -50" stroke="#cad3bf" opacity=".35" stroke-width="2"/>
+<path d="M250 955V648" stroke="#695d45" stroke-width="15"/>
+<ellipse cx="250" cy="630" rx="95" ry="150" fill="#6f795e"/>
+<ellipse cx="218" cy="595" rx="62" ry="115" fill="#82886a"/>
+<path d="M1470 875V670" stroke="#695d45" stroke-width="10"/>
+<ellipse cx="1470" cy="644" rx="67" ry="110" fill="#78846a"/>
+</g></svg>

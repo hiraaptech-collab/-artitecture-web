@@ -1,0 +1,21 @@
+.project-enquiry { display:grid; grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr); gap:7vw; background:#f0e8dd; }
+.enquiry-introduction h2 { margin:20px 0; }
+.enquiry-contact { margin:32px 0; }
+.enquiry-contact div { display:grid; grid-template-columns:100px 1fr; gap:15px; padding:13px 0; border-top:1px solid #4a1e2a20; font-size:.75rem; }
+.enquiry-contact dt { color:#94775e; } .enquiry-contact dd { margin:0; overflow-wrap:anywhere; }
+.enquiry-contact a { color:#4a1e2a; }
+.enquiry-form { display:grid; gap:20px; }
+.enquiry-form label,.enquiry-result > label { display:grid; gap:8px; font-size:.72rem; color:#4a1e2a; }
+.enquiry-field-row { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:20px; }
+.enquiry-form :is(input,select,textarea),.enquiry-result textarea { width:100%; min-width:0; border:1px solid #4a1e2a35; padding:13px 14px; background:#fbf7f0; color:#4b403a; font:400 .8rem/1.7 Arial,sans-serif; border-radius:0; min-height:48px; }
+.enquiry-form textarea,.enquiry-result textarea { resize:vertical; }
+.enquiry-form input::placeholder,.enquiry-form textarea::placeholder { color:#807368; }
+.enquiry-submit { padding:14px 20px; border:1px solid #4a1e2a; background:#4a1e2a; color:#fff8ee; cursor:pointer; display:flex; align-items:center; justify-content:space-between; gap:20px; min-height:48px; font:inherit; font-size:.73rem; }
+.project-enquiry .enquiry-note { font-size:.69rem; line-height:1.75; }
+.enquiry-status { font-size:.75rem !important; margin:18px 0 !important; }
+.enquiry-result { border-top:1px solid #4a1e2a30; padding-top:20px; }
+.enquiry-result textarea { margin-top:10px; }
+.enquiry-result-actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:14px; }
+.enquiry-result-actions :is(button,a) { min-height:44px; padding:10px 16px; border:1px solid #4a1e2a50; background:transparent; color:#4a1e2a; font:inherit; font-size:.7rem; cursor:pointer; }
+@media(max-width:850px) { .project-enquiry { grid-template-columns:1fr; gap:36px; } }
+@media(max-width:540px) { .enquiry-field-row { grid-template-columns:1fr; } }

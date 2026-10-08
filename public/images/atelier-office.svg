@@ -1,0 +1,29 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1100" viewBox="0 0 1600 1100" role="img" aria-label="Original concept illustration of a light-filled workplace atrium"><defs>
+<linearGradient id="sky" x2="0" y2="1"><stop stop-color="#e9e1d4"/><stop offset="1" stop-color="#f4ede3"/></linearGradient>
+<linearGradient id="stone" x2="1" y2=".8"><stop stop-color="#dfceb4"/><stop offset="1" stop-color="#bda283"/></linearGradient>
+<linearGradient id="shade" x2="1" y2="0"><stop stop-color="#56483c"/><stop offset="1" stop-color="#a08c72"/></linearGradient>
+<linearGradient id="glass" x2="1" y2="1"><stop stop-color="#7d9691"/><stop offset=".6" stop-color="#b4c1b2"/><stop offset="1" stop-color="#5c7069"/></linearGradient>
+<linearGradient id="ground" x2="0" y2="1"><stop stop-color="#d0bc9e"/><stop offset="1" stop-color="#e2d1b8"/></linearGradient>
+<filter id="soft"><feGaussianBlur stdDeviation="12"/></filter>
+<filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".65" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".055"/></feComponentTransfer><feBlend in="SourceGraphic" mode="multiply"/></filter>
+</defs><rect width="1600" height="1100" fill="url(#sky)"/><g filter="url(#grain)">
+<rect y="830" width="1600" height="270" fill="#cbbca4"/>
+<path d="M0 0L670 310V890L0 1100Z" fill="#d2c3ad"/>
+<path d="M1600 0L970 310V890L1600 1100Z" fill="#bcaa90"/>
+<path d="M670 310H970V890H670Z" fill="#e7ddcb"/>
+<path d="M0 0H1600L970 310H670Z" fill="#f2e9d9"/>
+<path d="M450 0H1150L930 285H690Z" fill="url(#glass)"/>
+<path d="M460 0L690 285" stroke="#f4eee2" stroke-width="16"/><path d="M572 0L729 285" stroke="#f4eee2" stroke-width="16"/><path d="M684 0L768 285" stroke="#f4eee2" stroke-width="16"/><path d="M796 0L807 285" stroke="#f4eee2" stroke-width="16"/><path d="M908 0L846 285" stroke="#f4eee2" stroke-width="16"/><path d="M1020 0L885 285" stroke="#f4eee2" stroke-width="16"/><path d="M1132 0L924 285" stroke="#f4eee2" stroke-width="16"/>
+<path d="M0 250L670 420V585L0 520Z" fill="url(#shade)"/>
+<path d="M1600 250L970 420V585L1600 520Z" fill="url(#shade)"/>
+<path d="M0 520L670 585V618L0 565Z" fill="#eee2cc"/>
+<path d="M1600 520L970 585V618L1600 565Z" fill="#eee2cc"/>
+<path d="M220 305V997.2" stroke="#e7dcc7" stroke-width="35"/><path d="M1380 305V997.2" stroke="#d1bea0" stroke-width="35"/><path d="M420 355V949.2" stroke="#e7dcc7" stroke-width="35"/><path d="M1180 355V949.2" stroke="#d1bea0" stroke-width="35"/><path d="M580 395V910.8" stroke="#e7dcc7" stroke-width="35"/><path d="M1020 395V910.8" stroke="#d1bea0" stroke-width="35"/>
+<path d="M720 535H920V800H720Z" fill="url(#glass)"/>
+<path d="M580 890L1020 890L1260 1100H320Z" fill="#e4d8c4"/>
+<path d="M590 904L985 904L1040 965H530Z" fill="#a28f73"/>
+<path d="M600 902l-60 140" stroke="#7b6b55" stroke-width="2"/><path d="M665 902l-60 140" stroke="#7b6b55" stroke-width="2"/><path d="M730 902l-60 140" stroke="#7b6b55" stroke-width="2"/><path d="M795 902l-60 140" stroke="#7b6b55" stroke-width="2"/><path d="M860 902l-60 140" stroke="#7b6b55" stroke-width="2"/><path d="M925 902l-60 140" stroke="#7b6b55" stroke-width="2"/>
+<ellipse cx="810" cy="876" rx="120" ry="27" fill="#8c987d"/>
+<path d="M810 866V675" stroke="#7b7153" stroke-width="9"/>
+<ellipse cx="810" cy="657" rx="72" ry="94" fill="#7f8b71"/>
+</g></svg>

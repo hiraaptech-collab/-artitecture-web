@@ -1,0 +1,79 @@
+.cinematic-hero { height:190svh; text-align:left; position:relative; background:#f0e8dd; }
+.cinema-sticky { height:calc(100svh - 92px); min-height:440px; position:sticky; top:92px; overflow:hidden; isolation:isolate; }
+.cinema-travelling-image { position:absolute; margin:0; left:0; top:0; width:100%; height:100%; overflow:hidden; z-index:1; background:#dbcebc; }
+.cinema-photo { width:100%; height:100%; object-fit:cover; display:block; image-rendering:auto; backface-visibility:hidden; transform:translateZ(0); will-change:transform; }
+.cinema-shade { position:absolute; inset:0; z-index:2; pointer-events:none; background:linear-gradient(90deg,#211714eb 0%,#2d201bb0 42%,#30231b35 75%); }
+.cinema-heading { position:absolute; z-index:3; width:min(520px,43%); left:var(--studio-gutter,6vw); top:50%; transform:translateY(-50%); color:#fbf6ef; }
+.cinema-eyebrow { font-size:.6rem; letter-spacing:.18em; line-height:1.8; }
+body .cinematic-hero h1.cinema-title { font:400 clamp(2.8rem,4.9vw,5.1rem)/1.06 Georgia,serif; letter-spacing:-.045em; color:#fff9ef; margin:24px 0; text-wrap:balance; }
+.cinema-summary { font-size:.92rem; line-height:1.85; max-width:450px; color:#f4e8db; }
+.cinema-button { display:inline-flex; gap:30px; align-items:center; min-height:48px; padding:12px 20px; margin-top:28px; border:1px solid #f5ead599; color:#fff8ee; text-decoration:none; font-size:.7rem; background:#fff8ee0a; backdrop-filter:blur(6px); transition:background .35s; }
+.cinema-button:hover { background:#fff8ee22; }
+.cinema-scroll-note { margin-top:40px !important; font-size:.52rem; letter-spacing:.16em; display:flex; gap:20px; }
+.cinema-introduction { position:absolute; left:var(--studio-gutter,6vw); top:50%; transform:translateY(-50%); width:min(520px,40%); z-index:0; color:#665b54; }
+.cinema-introduction h2 { font:400 clamp(1.8rem,2.8vw,3rem)/1.15 Georgia,serif; color:#4a1e2a; margin:20px 0; letter-spacing:-.03em; }
+.cinema-introduction > p:not(.editorial-eyebrow) { font-size:.86rem; line-height:1.85; margin-bottom:16px; }
+.editorial-eyebrow { font-size:.58rem; letter-spacing:.14em; color:#92735e; line-height:1.8; }
+.editorial-link { display:inline-flex; align-items:center; justify-content:space-between; gap:30px; color:#4a1e2a; min-height:44px; border-bottom:1px solid #4a1e2a50; font-size:.73rem; text-decoration:none; margin-top:12px; }
+.cinema-image-note { position:absolute; bottom:0; padding:14px 20px; background:#231913b5; color:#fff8ee; font-size:.5rem; line-height:1.6; letter-spacing:.08em; opacity:0; visibility:hidden; width:100%; }
+.cinema--reverse .cinema-heading { left:auto; right:var(--studio-gutter,6vw); }
+.cinema--reverse .cinema-shade { background:linear-gradient(270deg,#211714e6,#2d201b9c 48%,#30231b25); }
+.cinema--reverse .cinema-introduction { left:auto; right:var(--studio-gutter,6vw); }
+.cinema--gallery .cinema-photo { object-position:50% 35% !important; }
+.cinema--detail .cinema-heading { top:57%; }
+.cinema--section .cinema-shade { background:linear-gradient(90deg,#201c18eb,#201c1880 55%,#201c1830); }
+.cinematic-hero :is(a,button):focus-visible { outline:2px solid currentColor; outline-offset:5px; }
+@media(max-width:850px) {
+  .cinema-sticky { top:78px; height:calc(100svh - 78px); min-height:0; }
+  .cinema-heading { width:46%; }
+  body .cinematic-hero h1.cinema-title { font-size:clamp(2.3rem,5.5vw,3.8rem); }
+  .cinema-summary { font-size:.8rem; line-height:1.7; }
+  .cinema-introduction h2 { font-size:clamp(1.6rem,3vw,2.4rem); }
+  .cinema-introduction > p:not(.editorial-eyebrow) { font-size:.77rem; }
+}
+@media(max-width:650px) and (orientation:portrait) {
+  .cinema-heading,.cinema--reverse .cinema-heading { left:6vw; right:auto; width:85%; top:48%; }
+  .cinema-shade,.cinema--reverse .cinema-shade { background:linear-gradient(90deg,#211714db,#21171490 75%,#21171470); }
+  body .cinematic-hero h1.cinema-title { font-size:clamp(2.35rem,9.5vw,3.6rem); max-width:420px; }
+  .cinema-summary { max-width:340px; font-size:.84rem; }
+  .cinema-introduction,.cinema--reverse .cinema-introduction { top:5%; transform:none; left:6%; right:auto; width:88%; }
+  .cinema-introduction h2 { font-size:1.8rem; margin:12px 0; }
+  .cinema-introduction > p:not(.editorial-eyebrow) { font-size:.77rem; line-height:1.7; margin-bottom:8px; }
+  .cinema-intro-support { display:none; }
+  .cinema-introduction .editorial-link { margin-top:3px; }
+  .cinema-scroll-note { margin-top:28px !important; }
+}
+@media(max-height:550px) and (orientation:landscape) {
+  body .cinematic-hero h1.cinema-title { font-size:clamp(1.6rem,4vw,2.6rem); margin:12px 0; }
+  .cinema-eyebrow { font-size:.48rem; }
+  .cinema-summary { font-size:.68rem; line-height:1.6; }
+  .cinema-button { margin-top:14px; padding:9px 14px; min-height:44px; font-size:.61rem; }
+  .cinema-scroll-note { display:none; }
+  .cinema-introduction h2 { font-size:1.5rem; margin:10px 0; }
+  .cinema-introduction > p:not(.editorial-eyebrow) { font-size:.68rem; line-height:1.65; }
+  .cinema-intro-support { display:none; }
+}
+@media(min-width:2200px) { .cinema-heading { width:540px; } .cinema-introduction { width:540px; } }
+@media(prefers-reduced-motion:reduce) {
+  .cinematic-hero { height:auto; }
+  .cinema-sticky { position:relative; top:auto; height:auto; min-height:0; overflow:visible; }
+  .cinema-travelling-image,.cinema-shade { height:calc(100svh - 92px); min-height:440px; }
+  .cinema-heading,.cinema--reverse .cinema-heading { position:relative; transform:none; top:auto; min-height:calc(100svh - 92px); padding-block:60px; display:flex; flex-direction:column; justify-content:center; }
+  .cinema-introduction,.cinema--reverse .cinema-introduction { position:relative; top:auto; left:auto; right:auto; transform:none; width:auto; max-width:900px; padding:60px var(--studio-gutter); }
+  .cinema-scroll-note { display:none; }
+  .cinema-intro-support { display:block; }
+}
+@media(prefers-reduced-motion:reduce) and (max-width:850px) {
+  .cinema-travelling-image,.cinema-shade { height:calc(100svh - 78px); min-height:0; }
+  .cinema-heading,.cinema--reverse .cinema-heading { min-height:calc(100svh - 78px); padding-block:28px; }
+}
+
+@media(prefers-reduced-motion:reduce) {
+  .cinema--reverse .cinema-heading { left:auto; right:auto; margin-left:auto; margin-right:var(--studio-gutter); }
+}
+@media(max-width:650px) and (max-height:700px) and (orientation:portrait) {
+  .cinema-introduction,.cinema--reverse .cinema-introduction { top:4%; }
+  .cinema-introduction h2 { font-size:1.5rem; margin:10px 0; }
+  .cinema-introduction > p:not(.editorial-eyebrow) { font-size:.75rem; line-height:1.6; }
+  .cinema-introduction .editorial-eyebrow { font-size:.5rem; }
+}
